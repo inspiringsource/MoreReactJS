@@ -3,7 +3,7 @@ import './App.css'
 import React, { Component } from 'react'
 import Body, {Body2} from "./components/Body"
 import Header from "./components/Header"
-
+import Counter from './components/Counter'
 
 
 function App() {
@@ -21,6 +21,8 @@ function App() {
       text="Hello"
       text2="Good-bye"/>
       <Body2 />
+      <Counter initialCount={0}/>
+      <Counter initialCount={25}/>
     </div>
   )
 }
