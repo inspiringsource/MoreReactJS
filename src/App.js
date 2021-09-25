@@ -1,38 +1,10 @@
 import logo from './logo.svg'
 import './App.css'
 import React, { Component } from 'react'
+import Body, {Body2} from "./components/Body"
+import Header from "./components/Header"
 
-function Body(props) {
-  return (
-    <div>
-    <p className="App-intro">
-      {props.text}<br/> 
-      {props.text2}
-    </p>
-    </div>
-  )
-}
 
-class Header extends Component {
-  render() {
-    return (
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title"> {this.props.title}</h1>
-        <div>
-          Number =
-          {this.props.num}
-          <br/>Object b =
-          {this.props.myObj.b}
-          <br/>My Array [2]= 
-          {this.props.myArr[2]}
-          <br/>My Function a+b= 
-          {this.props.myFunc(10, 12)}
-        </div>
-      </header>
-    )
-  }
-}
 
 function App() {
 
@@ -48,6 +20,7 @@ function App() {
       <Body 
       text="Hello"
       text2="Good-bye"/>
+      <Body2 />
     </div>
   )
 }
