@@ -1,4 +1,3 @@
-import logo from './logo.svg'
 import './App.css'
 import React, { Component } from 'react'
 import ImageSlider from './components/ImageSlider'
@@ -10,10 +9,18 @@ class App extends Component {
   }
   render() {
     const buttonText = this.state.visible ? 'hide' : 'show'
-    const slider = this.state.visible ? <ImageSlider /> : <div><Counter initialCount={0}/></div>
+    const slider = this.state.visible ? (
+      <ImageSlider />
+    ) : (
+      <div>
+        <Counter initialCount={0} />
+      </div>
+    )
     return (
       <div className="App">
-        {slider}
+        <div className={this.state.visible ? 'visible' : 'hidden'}>
+          <Counter />
+        </div>
         <button
           onClick={() => {
             this.setState({ visible: !this.state.visible })
