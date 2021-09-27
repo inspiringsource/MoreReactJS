@@ -1,8 +1,6 @@
 import './App.css'
 import React, { Component } from 'react'
-import ImageSlider from './components/ImageSlider'
-import Counter from './components/Counter'
-import MyForm from './components/MyForm'
+import FetchRandomUser from './components/FetchRandomUser'
 
 class App extends Component {
   state = {
@@ -11,7 +9,7 @@ class App extends Component {
   render() {
       return (
       <div className="App">
-        <MyForm />
+        <FetchRandomUser />
       </div>
     )
   }
