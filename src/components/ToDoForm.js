@@ -13,11 +13,15 @@ export default class ToDoForm extends Component {
   }
 
   handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     this.props.onSubmit({
       id: shortid.generate(),
       text: this.state.text,
       complete: false,
+    })
+    this.setState({
+      // clearing the input field
+      text: "",
     })
   }
 
@@ -30,6 +34,7 @@ export default class ToDoForm extends Component {
           onChange={this.handleChange}
           placeholder="todo..."
         />
+        <button onClick={this.handleSubmit} >add todo</button>
       </form>
     )
   }
