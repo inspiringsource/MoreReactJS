@@ -1,18 +1,18 @@
 import './App.css'
 import React, { Component } from 'react'
-import FetchRandomPeople from './components/FetchRandomPeople'
+import ToDoList from './components/ToDoList'
 
 class App extends Component {
-  state = {
-    visible: true,
-  }
+
   render() {
-      return (
+    return (
       <div className="App">
-          <FetchRandomPeople />
+        <ToDoList />
       </div>
     )
   }
 }
 
 export default App
+
+// https://youtu.be/I6IY2TqnPDA?t=576

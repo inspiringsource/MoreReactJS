@@ -21,7 +21,7 @@ export default class FetchRandomPeople extends Component {
             <div>{person.name.first}</div>
             <div>{person.name.last}</div>
             <div>{person.location.country}</div>
-            <img src={person.picture.large}></img>
+            <img alt="Profile" src={person.picture.large}></img>
           </div>
         ))}
       </div>
