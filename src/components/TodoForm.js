@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import shortid from 'shortid'
 
-export default class ToDoForm extends Component {
+export default class TodoForm extends Component {
   state = {
     text: '',
   }

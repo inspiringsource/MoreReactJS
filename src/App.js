@@ -1,13 +1,13 @@
 import './App.css'
 import React, { Component } from 'react'
-import ToDoList from './components/ToDoList'
+import TodoList from './components/TodoList'
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
-        <ToDoList />
+        <TodoList />
       </div>
     )
   }
@@ -16,4 +16,4 @@ class App extends Component {
 export default App
 
 // In progress:
-// https://youtu.be/I6IY2TqnPDA?t=646
+// https://youtu.be/I6IY2TqnPDA?t=1588
